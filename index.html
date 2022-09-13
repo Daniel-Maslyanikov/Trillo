@@ -31,19 +31,38 @@
             </svg>
             <span class="user-nav__notification">17</span>
           </div>
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box user-nav__icon-box--dropdown">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">21</span>
+            <div class="user-nav__chat">
+              <div class="user-nav__dialog">
+                <div class="user-nav__user-info">
+                  <img src="/img/user-1.jpg" class="user-nav__photo" alt="user 1" />
+                  <p class="user-nav__name">Nick Smith</p>
+                </div>
+                <p class="user-nav__time">17:31</p>
+                <p class="user-nav__message">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="user-nav__dialog">
+                <div class="user-nav__user-info">
+                  <img src="/img/user-2.jpg" class="user-nav__photo" alt="user 1" />
+                  <p class="user-nav__name">Mary Thomas</p>
+                </div>
+                <p class="user-nav__time">18:21</p>
+                <p class="user-nav__message">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <p class="user-nav__arrow">&darr;</p>
+            </div>
           </div>
           <div class="user-nav__user">
             <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo" />
             <span class="user-nav__user-name">Jonas</span>
-						<div class="user-nav__dropdown">
-							<a href="#">Settings</a>
-							<a href="#">Log out</a>
-						</div>
+            <div class="user-nav__dropdown">
+              <a href="#">Settings</a>
+              <a href="#">Log out</a>
+            </div>
           </div>
         </nav>
       </header>
@@ -131,86 +150,84 @@
 
             <div class="overview__rating">
               <div class="overview__rating-average">8.6</div>
-							<div class="overview__rating-count">429 votes</div>
+              <div class="overview__rating-count">429 votes</div>
             </div>
           </div>
 
-					<div class="detail">
-						<div class="description">
-							<p class="paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam perferendis expedita itaque officia nulla in ullam. Incidunt commodi dolores in nam molestiae iste, iusto amet, asperiores fuga, aperiam ea?
-							</p>
-							<p class="paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam perferendis expedita itaque officia nulla in ullam. 
-							</p>
-							<ul class="list">
-								<li class="list__item">Close to the beach</li>
-								<li class="list__item">Breakfast included</li>
-								<li class="list__item">Free airport shuttle</li>
-								<li class="list__item">Free wifi in all rooms</li>
-								<li class="list__item">Air conditioning and heating</li>
-								<li class="list__item">Pets allowed</li>
-								<li class="list__item">We speak all languages</li>
-								<li class="list__item">Perfect for families</li>
-							</ul>
-							<div class="recommend">
-								<p class="recommend__count">
-									Lucy and other friends recommend this hotel.
-								</p>
-								<div class="recommend__friends">
-									<img src="img/user-3.jpg" alt="Firend 1" class="recommend__photo">
-									<img src="img/user-4.jpg" alt="Firend 2" class="recommend__photo">
-									<img src="img/user-5.jpg" alt="Firend 2" class="recommend__photo">
-									<img src="img/user-6.jpg" alt="Firend 4" class="recommend__photo">
-								</div>
-							</div>
-						</div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam perferendis
+                expedita itaque officia nulla in ullam. Incidunt commodi dolores in nam molestiae
+                iste, iusto amet, asperiores fuga, aperiam ea?
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsam perferendis
+                expedita itaque officia nulla in ullam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">Lucy and other friends recommend this hotel.</p>
+                <div class="recommend__friends">
+                  <img src="img/user-3.jpg" alt="Firend 1" class="recommend__photo" />
+                  <img src="img/user-4.jpg" alt="Firend 2" class="recommend__photo" />
+                  <img src="img/user-5.jpg" alt="Firend 2" class="recommend__photo" />
+                  <img src="img/user-6.jpg" alt="Firend 4" class="recommend__photo" />
+                </div>
+              </div>
+            </div>
 
-						<div class="user-reviews">
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed voluptas
+                  mollitia dolorum tempora sunt architecto unde nemo quam.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Jun 23rd, 2022</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
 
-							<figure class="review">
-								<blockquote class="review__text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed voluptas mollitia dolorum tempora sunt architecto unde nemo quam.
-								</blockquote>
-								<figcaption class="review__user">
-									<img src="img/user-1.jpg" alt="User 1" class="review__photo">
-									<div class="review__user-box">
-										<p class="review__user-name">Nick Smith</p>
-										<p class="review__user-date">Jun 23rd, 2022</p>
-									</div>
-									<div class="review__rating">7.8</div>
-								</figcaption>
-							</figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore, in
+                  tenetur quos aperiam quidem hic earum doloremque voluptatibus inventore.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Aug 13th, 2022</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
 
-							<figure class="review">
-								<blockquote class="review__text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore, in tenetur quos aperiam quidem hic earum doloremque voluptatibus inventore.
-								</blockquote>
-								<figcaption class="review__user">
-									<img src="img/user-2.jpg" alt="User 2" class="review__photo">
-									<div class="review__user-box">
-										<p class="review__user-name">Mary Thomas</p>
-										<p class="review__user-date">Aug 13th, 2022</p>
-									</div>
-									<div class="review__rating">9.3</div>
-								</figcaption>
-							</figure>
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+          </div>
 
-							<button class="btn-inline">
-								Show all <span>&rarr;</span>
-							</button>
-						</div>
-					</div>
-
-					<div class="cta">
-						<h2 class="cta__book-now">
-							Good news! We have 4 free rooms for your selected dates!
-						</h2>
-						<button class="btn">
-							<span class="btn__visible">Book now</span>
-							<span class="btn__invisible">Only 4 rooms left</span>
-						</button>
-					</div>
+          <div class="cta">
+            <h2 class="cta__book-now">Good news! We have 4 free rooms for your selected dates!</h2>
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+          </div>
         </main>
       </div>
     </div>
